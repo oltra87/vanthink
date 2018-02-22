@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--禁止缩放-->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <title>基于swiper的响应式移动端tab切换效果 - 素材牛网特特效演示</title>
+    <link rel="stylesheet" href="themes/default/css/swiper.min.css">
+
+
+    <style>
+        html,body{min-height:100%;}body{background:#ebebeb;color:#333;}a{color:#333;}a:hover,a:active,a:focus{color:#333;}
+        .swiper-container{}
+        .my-pagination{}
+        .my-pagination .swiper-pagination-bullet{text-align:center;border-radius:0;opacity:1;}
+        .my-pagination ul{display:-webkit-box;}
+        .my-pagination li{display:block;background:#fff;overflow:hidden;box-flex:1;-moz-box-flex:1;-webkit-box-flex:1;height:40px;line-height:40px;position:relative;font-size:15px;}
+        .my-pagination li:after{position:absolute;top:auto;right:auto;bottom:0;left:0;z-index:1;display:block;width:100%;height:1px;content:'';background-color:#dcdcdc;-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transform:scaleY(.5)}
+        .my-pagination .swiper-pagination-bullet-active{color:#21a4f4;}
+        .my-pagination .swiper-pagination-bullet-active:after{opacity:1;background-color:#21a4f4;height:4px;}
+    </style>
+
+
+</head>
+
+<body ontouchstart>
+<div class="swiper-container">
+    <div class="my-pagination"><ul class="my-pagination-ul"></ul></div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            111111111111111
+        </div>
+        <div class="swiper-slide">
+            222222222222222
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination: '.my-pagination-ul',
+        paginationClickable: true,
+        paginationBulletRender: function (index, className) {
+            switch (index) {
+                case 0: name='流水';break;
+                case 1: name='规则';break;
+                default: name='';
+            }
+            return '<li class="' + className + '">' + name + '</li>';
+        }
+    })
+</script>
+
+
+
+</body>
+
+</html>

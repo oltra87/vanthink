@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>名堂名品-名品移动营销服务联盟</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <style>
+        *{margin:0; padding:0;}
+        body{margin:0; padding:0; overflow-y: hidden; color:#fff; font-family:Microsoft YaHei,Arial,Verdana,sans-serif; }
+        li{list-style-type:none;}
+        .op-section{ background: #000114 url("img/bg1.jpg") center top no-repeat; background-size: cover; }
+        .second{background: #0a0f37 url("img/bg2.jpg") center top no-repeat; background-size: cover;}
+        .third{background: #000c60 url("img/bg3.jpg") center top no-repeat; background-size: cover;}
+        #radioWrap{  width:10px;  height:60px;  position:absolute;  right:2%;  top:50%;  margin-top: -30px; z-index: 99999; }
+        #radio{width:100%; height:100%; overflow: hidden;}
+        #radio li{  width:10px; height:10px; background-color: rgba(255,255,255, 0.2); text-indent: -10000px; border-radius: 50%; margin-top: 12px; cursor:pointer;}
+        #radio li:first-child{margin-top:0;}
+        #radioOn{  width:10px;  height:10px;  margin-bottom:12px;  position: absolute;  top:0; left:0;  background-color: #fff;  border-radius: 50%;}
+        /* tel */
+        a.tel{ position: absolute; right: 2%; display: inline-block; top: 5%; color: #fff; text-decoration: none; font-size: 1rem; background: url("img/tel.png") 8px center no-repeat; border: 1px solid #fff; border-radius:50px;; height: 40px; width: 40px; line-height: 40px; z-index: 99999;}
+        a.tel span{ display: none;}
+        a.tel:hover{ width: auto; padding: 0 15px 0 40px; }
+        a.tel:hover span{  display: inline; }
+
+        /* first */
+        .first{ text-align: center; position: relative; }
+        .logo_l{ margin-top: 10%; }
+        .first div{ font-size: 1.2rem; }
+        .first div h1{ font-size: 2rem; margin-top:8%; }
+        .first div p{ display: inline-block; border: 1px solid #fff; padding: 10px 25px; }
+        .first div p span{ margin: 0 10px; }
+        .first canvas{ position: absolute; left: 0; bottom: 0; opacity: 0.3;  }
+        .first div.firstMain{ position: absolute; z-index: 999; text-align: center; width: 100%; }
+
+        /* second */
+        .second{ text-align: center; }
+        .logo_s{ text-align: left; }
+        .logo_s img{  margin: 3% 0 0 3%; }
+        .second img.cloudFont{ width: 27%; margin-top:6%; }
+        .second h2{  font-size: 1.2rem; margin-top: 2%; font-weight: normal; }
+        .second h2 p{  border-bottom: 1px solid #fff; display: inline-block; padding-bottom:10px; }
+
+        /* third */
+        .third{ position: relative; }
+        .third li{ display: inline-block; width: 50%; text-align: center; float: left; }
+        .third li h2{ margin-bottom: 15px; margin-top:30%; }
+        .third li h2 p{ display: inline-block; border: 1px solid #fff; font-size: 2rem; padding: 6px 30px; }
+        .third li span{ font-size: 1.2rem; margin: 0 10px; }
+
+        /* copy */
+        .copy{ font-size: 14px; color: #6e80ff; position: absolute; left:2%; bottom: 2%; }
+    </style>
+    <!--[if IE]>
+    <script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="view">
+    <div id="frame">
+        <div class="op-section first" id="first">
+            <div class="firstMain">
+               <img src="img/logo_l.png" alt="名堂名品" class="logo_l" >
+                <div>
+                    <h1>名品移动自营销联盟</h1>
+                    <p>
+                        <span>刚需名品</span>
+                        <span>广告联盟</span>
+                        <span>效果结算</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="op-section second">
+            <div class="logo_s"><img src="img/logo_s.png"></div>
+            <img src="img/cloudFont_M.png" alt="文字云" class="cloudFont" >
+            <h2><p>“人们不再研究如何竞争，而是研究如何合作“</p></h2>
+        </div>
+        <div class="op-section third">
+            <div class="logo_s"><img src="img/logo_s.png"></div>
+            <ul>
+                <li>
+                    <h2><p>名品直供</p></h2>
+                    <span>品牌</span>
+                    <span>源头</span>
+                    <span>热销</span>
+                </li>
+                <li>
+                    <h2><p>实时保价</p></h2>
+                    <span>最低价</span>
+                    <span>一站购</span>
+                    <span>超值赠</span>
+                </li>
+            </ul>
+            <div class="copy">CopyRight ©2017 宁波市名堂名品信息科技有限公司.   咨询热线0574-27612242（周一至周五 9:00-18:00 国定节假日除外）</div>
+        </div>
+        <a href="#" class="tel"><span>0574-27612242</span></a>
+
+    </div>
+</div>
+<div id="radioWrap">
+    <ul id="radio">
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+    </ul>
+    <span id="radioOn"></span>
+</div>
+
+<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/onepage.js"></script>
+<script>
+    $(document).ready(function(){
+        startOnePage({
+            frame: "#view",
+            container: "#frame",
+            sections: ".op-section",
+            radio: "#radio",
+            radioOn: "#radioOn",
+            speed: 500,
+            easing: "swing"
+        });
+    });
+</script>
+
+<script src="js/three.min.js"></script>
+<script>
+    var SEPARATION = 200, AMOUNTX = 50, AMOUNTY = 50;
+    var container;
+    var camera, scene, renderer;
+    var particles, particle, count = 0;
+    var mouseX = 0, mouseY = 0;
+    var windowHalfX = window.innerWidth / 2;
+    var windowHalfY = window.innerHeight / 2;
+    init();
+    animate();
+    function init() {
+        container = document.createElement( 'div' );
+        //document.body.appendChild( container );
+        document.getElementById('first').appendChild( container );
+        camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+        camera.position.z = 1000;
+        scene = new THREE.Scene();
+        particles = new Array();
+        var PI2 = Math.PI * 2;
+        var material = new THREE.ParticleCanvasMaterial( {
+            color: 0x043b96,
+            program: function ( context ) {
+                context.beginPath();
+                context.arc( 0, 0, 1, 0, PI2, true );
+                context.fill();
+            }
+        } );
+
+        var i = 0;
+        for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
+            for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
+                particle = particles[ i ++ ] = new THREE.Particle( material );
+                particle.position.x = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 );
+                particle.position.z = iy * SEPARATION - ( ( AMOUNTY * SEPARATION ) / 2 );
+                scene.add( particle );
+            }
+        }
+        renderer = new THREE.CanvasRenderer();
+        renderer.setSize( window.innerWidth, window.innerHeight );
+        container.appendChild( renderer.domElement );
+        document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+        document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+        document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+        //
+        window.addEventListener( 'resize', onWindowResize, false );
+    }
+
+    function onWindowResize() {
+        windowHalfX = window.innerWidth / 2;
+        windowHalfY = window.innerHeight / 2;
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize( window.innerWidth, window.innerHeight );
+    }
+    //
+    function onDocumentMouseMove( event ) {
+        mouseX = event.clientX - windowHalfX;
+        mouseY = event.clientY - windowHalfY;
+    }
+
+    function onDocumentTouchStart( event ) {
+        if ( event.touches.length === 1 ) {
+            event.preventDefault();
+            mouseX = event.touches[ 0 ].pageX - windowHalfX;
+            mouseY = event.touches[ 0 ].pageY - windowHalfY;
+        }
+    }
+
+    function onDocumentTouchMove( event ) {
+        if ( event.touches.length === 1 ) {
+            event.preventDefault();
+            mouseX = event.touches[ 0 ].pageX - windowHalfX;
+            mouseY = event.touches[ 0 ].pageY - windowHalfY;
+        }
+    }
+    //
+    function animate() {
+        requestAnimationFrame( animate );
+        render();
+    }
+    function render() {
+        camera.position.x += ( mouseX - camera.position.x ) * .05;
+        camera.position.y += ( - mouseY - camera.position.y ) * .05;
+        camera.lookAt( scene.position );
+        var i = 0;
+        for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
+            for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
+                particle = particles[ i++ ];
+                particle.position.y = ( Math.sin( ( ix + count ) * 0.3 ) * 50 ) + ( Math.sin( ( iy + count ) * 0.5 ) * 50 );
+                particle.scale.x = particle.scale.y = ( Math.sin( ( ix + count ) * 0.3 ) + 1 ) * 2 + ( Math.sin( ( iy + count ) * 0.5 ) + 1 ) * 2;
+            }
+        }
+        renderer.render( scene, camera );
+        count += 0.1;
+    }
+</script>
+
+</body>
+</html>

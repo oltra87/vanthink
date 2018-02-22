@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <title>迪佳百川俱乐部</title>
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/css/member.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/data/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/data/assets/bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/css/style.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/css/user.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/css/photoswipe.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/statics/css/search.css" />
+    <script type="text/javascript" >var tpl = 'http://www.ticaglobal.cn/themes/default';</script>
+    <!-- ********************************** 新增订单状态筛选Css  Start  ***************************************  -->
+    <style type="text/css">
+        .status_tab{ background: #fff; width: 100%; font-size: 0; }
+        .status_tab dd{ width: 20%; display: inline-block; font-size: 1.3rem; text-align: center; }
+        .status_tab dd a{ display: inline-block; padding: 1.2rem 0; }
+        .status_tab dd a.active{ color: #007AFF; border-bottom: 2px solid #007AFF; }
+        /* 其他优化 */
+        h4.title{ font-size:0.9em; }
+        .ect-pro-list ul li dl{ margin-left: 8em; }
+        .user-order li dd:nth-last-of-type(1){ color: #aaa; }
+        .user-order li i.fa:before{ font-size: 2em; color: #ddd;}
+    </style>
+    <!-- ********************************** 新增订单状态筛选Css  Start  ***************************************  -->
+</head>
+
+<body>
+<div class="con">
+    <div class="ect-bg">
+        <header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write"> <a href=" javascript:history.go(-1) " class="pull-left ect-icon ect-icon1 ect-icon-history"></a> <span>全部订单</span> <a href="javascript:;" onClick="openMune()" class="pull-right ect-icon ect-icon1 ect-icon-mune"></a></header>
+        <nav class="ect-nav ect-nav-list" style="display:none;">
+            <ul class="ect-diaplay-box text-center">
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=index&a=index&u=441"><i class="ect-icon ect-icon-home"></i>首页</a></li>
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=category&a=top_all&u=441"><i class="ect-icon ect-icon-cate"></i>分类</a></li>
+                <li class="ect-box-flex"><a href="javascript:;" class="j-search-input"><i class="ect-icon ect-icon-search"></i>搜索</a></li>
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=flow&a=cart&u=441"><i class="ect-icon ect-icon-flow"></i>购物车</a></li>
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=user&a=index&u=441"><i class="ect-icon ect-icon-user"></i>个人中心</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ********************************** 新增订单状态筛选 Start  ***************************************  -->
+    <dl class="status_tab">
+        <dd><a href="javascript:alert('全部')" class="active">全部</a></dd>
+        <dd><a href="javascript:alert('待付款')">待付款</a></dd>
+        <dd><a href="javascript:alert('待发货')">待发货</a></dd>
+        <dd><a href="javascript:alert('待收货')">待收货</a></dd>
+        <dd><a href="javascript:alert('待评价')">待评价</a></dd>
+    </dl>
+    <!-- ********************************** 新增订单状态筛选 Start  ***************************************  -->
+
+    <div class="ect-pro-list user-order" style="border-bottom:none;">
+        <ul id="J_ItemList">
+            <li>
+                <a href="/index.php?m=default&c=user&a=order_detail&order_id=365&u=441"><img src="http://www.ticaglobal.cn/data/attached/images/201708/thumb_img/44_thumb_G_1503593727790.jpg" class="pull-left" />
+                    <dl>
+                        <dt>
+                        <h4 class="title">订单号：2017101811043900005</h4>
+                        </dt>
+                        <dd>总金额：<span class="ect-color">￥1098.00元</span></dd>
+                        <dd>状态：未确认,未付款,未发货</dd>
+                        <dd>时间：2017-10-18 19:04:39</dd>
+                    </dl>
+                    <i class="pull-right fa fa-angle-right"></i> </a>
+            </li>
+            <li>
+                <a href="/index.php?m=default&c=user&a=order_detail&order_id=301&u=441"><img src="http://www.ticaglobal.cn/data/attached/images/201708/thumb_img/53_thumb_G_1503607808447.jpg" class="pull-left" />
+                    <dl>
+                        <dt>
+                        <h4 class="title">订单号：2017101314231914788</h4>
+                        </dt>
+                        <dd>总金额：<span class="ect-color">￥351.00元</span></dd>
+                        <dd>状态：未确认,未付款,未发货</dd>
+                        <dd>时间：2017-10-13 22:23:19</dd>
+                    </dl>
+                    <i class="pull-right fa fa-angle-right"></i> </a>
+            </li>
+            <li>
+                <a href="/index.php?m=default&c=user&a=order_detail&order_id=225&u=441"><img src="http://www.ticaglobal.cn/data/attached/images/no_picture.gif" class="pull-left" />
+                    <dl>
+                        <dt>
+                        <h4 class="title">订单号：2017092611130346704</h4>
+                        </dt>
+                        <dd>总金额：<span class="ect-color">￥-48.50元</span></dd>
+                        <dd>状态：已取消,未付款,未发货</dd>
+                        <dd>时间：2017-09-26 19:13:03</dd>
+                    </dl>
+                    <i class="pull-right fa fa-angle-right"></i> </a>
+            </li>
+            <li>
+                <a href="/index.php?m=default&c=user&a=order_detail&order_id=224&u=441"><img src="http://www.ticaglobal.cn/data/attached/images/no_picture.gif" class="pull-left" />
+                    <dl>
+                        <dt>
+                        <h4 class="title">订单号：2017092611120384577</h4>
+                        </dt>
+                        <dd>总金额：<span class="ect-color">￥-48.00元</span></dd>
+                        <dd>状态：已取消,未付款,未发货</dd>
+                        <dd>时间：2017-09-26 19:12:03</dd>
+                    </dl>
+                    <i class="pull-right fa fa-angle-right"></i> </a>
+            </li>
+            <li>
+                <a href="/index.php?m=default&c=user&a=order_detail&order_id=223&u=441"><img src="http://www.ticaglobal.cn/data/attached/images/no_picture.gif" class="pull-left" />
+                    <dl>
+                        <dt>
+                        <h4 class="title">订单号：2017092611105929580</h4>
+                        </dt>
+                        <dd>总金额：<span class="ect-color">￥-48.00元</span></dd>
+                        <dd>状态：已取消,未付款,未发货</dd>
+                        <dd>时间：2017-09-26 19:10:59</dd>
+                    </dl>
+                    <i class="pull-right fa fa-angle-right"></i> </a>
+            </li>
+            <li>
+                <a href="/index.php?m=default&c=user&a=order_detail&order_id=220&u=441"><img src="http://www.ticaglobal.cn/data/attached/images/no_picture.gif" class="pull-left" />
+                    <dl>
+                        <dt>
+                        <h4 class="title">订单号：2017092611021981396</h4>
+                        </dt>
+                        <dd>总金额：<span class="ect-color">￥-49.50元</span></dd>
+                        <dd>状态：已取消,未付款,未发货</dd>
+                        <dd>时间：2017-09-26 19:02:19</dd>
+                    </dl>
+                    <i class="pull-right fa fa-angle-right"></i> </a>
+            </li>
+            <li>
+                <a href="/index.php?m=default&c=user&a=order_detail&order_id=219&u=441"><img src="http://www.ticaglobal.cn/data/attached/images/no_picture.gif" class="pull-left" />
+                    <dl>
+                        <dt>
+                        <h4 class="title">订单号：2017092611013177057</h4>
+                        </dt>
+                        <dd>总金额：<span class="ect-color">￥-49.00元</span></dd>
+                        <dd>状态：已确认,已付款,未发货</dd>
+                        <dd>时间：2017-09-26 19:01:31</dd>
+                    </dl>
+                    <i class="pull-right fa fa-angle-right"></i> </a>
+            </li>
+            <li>
+                <a href="/index.php?m=default&c=user&a=order_detail&order_id=218&u=441"><img src="http://www.ticaglobal.cn/data/attached/images/no_picture.gif" class="pull-left" />
+                    <dl>
+                        <dt>
+                        <h4 class="title">订单号：2017092611005450077</h4>
+                        </dt>
+                        <dd>总金额：<span class="ect-color">￥-49.50元</span></dd>
+                        <dd>状态：已取消,未付款,未发货</dd>
+                        <dd>时间：2017-09-26 19:00:54</dd>
+                    </dl>
+                    <i class="pull-right fa fa-angle-right"></i> </a>
+            </li>
+        </ul>
+    </div>
+
+    <section class="padding-all">
+        <ul class="dis-box">
+            <li class="n-page-but"><a href="#"><div class="page-but">上一页</div></a></li>
+
+            <li class="box-flex">
+                <div class="page-num">
+                    <select name="sel_question" onChange="window.location.href=this.value;">
+                        <option value="/index.php?m=default&c=user&a=order_list&u=441" selected >1/1</option>
+                    </select>
+                </div>
+            </li>
+
+            <li class="n-page-but"><a href="#"><div class="page-but">下一页</div></a></li>
+
+        </ul>
+    </section>
+</div>
+<div class="search-div ts-3">
+    <section class="search">
+        <form action="/index.php?m=default&c=category&a=index&u=441" method="post">
+            <div class="text-all dis-box j-text-all">
+                <a class="a-icon-back j-close-search" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou is-left-font"></i></a>
+                <div class="box-flex input-text">
+                    <input class="j-input-text" type="text" name="name" placeholder="请输入搜索关键词！" id="newinput" autofocus="autofocus" >
+                    <i class="iconfont icon-guanbi2 is-null j-is-null"></i>
+                </div>
+                <button type="submit" class="btn-submit">搜索</button>
+            </div>
+        </form>
+    </section>
+    <section class="search-con">
+        <div class="swiper-scroll history-search">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>
+                        <label class="fl">热门搜索</label>
+                    </p>
+                    <ul class="hot-search a-text-more">
+                    </ul>
+                    <p class="hos-search">
+                        <label class="fl">最近搜索</label>
+                        <span class="fr" onclick="javascript:clearHistroy();"><i class="iconfont icon-xiao10 is-xiao10 jian-top fr"></i></span>
+                    </p>
+
+                    <ul class="hot-search a-text-more a-text-one" id="search_histroy">
+                        <li><a href="/index.php?m=default&c=category&a=index&keywords=%E9%B1%BC&u=441"><span>鱼</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <footer class="close-search j-close-search">
+        点击关闭
+    </footer>
+</div>
+
+<script type="text/javascript">
+    //设置cookie
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires="+d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+    function clearHistroy(){
+        setCookie('ECS[keywords]', '', -1);
+        document.getElementById("search_histroy").style.visibility = "hidden";
+    }
+</script><script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.min.js" ></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.json.js" ></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/common.js"></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.more.js"></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/utils.js" ></script>
+<script src="http://www.ticaglobal.cn/data/assets/swiper/js/jquery.swiper.min.js"></script>
+<script src="http://www.ticaglobal.cn/themes/default/js/ectouch.js"></script>
+<script src="http://www.ticaglobal.cn/themes/default/js/simple-inheritance.min.js"></script>
+<script src="http://www.ticaglobal.cn/themes/default/js/code-photoswipe-1.0.11.min.js"></script>
+<script src="http://www.ticaglobal.cn/data/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://www.ticaglobal.cn/themes/default/js/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/validform.js" ></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/ectouch.js"></script>
+<script language="javascript">
+    var handler = function(e) { //禁止浏览器默认行为
+        e.preventDefault();
+    };
+    /*banner滚动图片*/
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        loop: true,
+        autoplay : 2000
+    });
+    /*弹出评论层并隐藏其他层*/
+    function openSearch(){
+        document.addEventListener("touchmove", handler, false);
+        $("body").addClass("show-search-div");
+        $(".search-div").css("z-index","4999");
+        $("input[name='keywords']").focus();
+    }
+</script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.more_user.js"></script>
+<script type="text/javascript">
+    var from_order_empty = "请选择要合并的从订单";
+    var to_order_empty = "请选择要合并的主订单";
+    var order_same = "主订单和从订单相同，请重新选择";
+    var confirm_merge = "您确实要合并这两个订单吗？";
+    if(){
+        get_asynclist('http://www.ticaglobal.cn/index.php?m=default&c=user&a=async_order_list&pay=1' , 'http://www.ticaglobal.cn/themes/default/images/loader.gif');
+    }
+</script>
+</body></html>

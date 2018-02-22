@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <title>迪佳百川俱乐部</title>
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/data/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/data/assets/bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/data/assets/swiper/css/swiper.min.css"/>
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/statics/css/ectouch.css" />
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/css/photoswipe.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/css/style.css">
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/js/ectouch.js"></script>
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/statics/css/search.css" />
+    <script type="text/javascript" >var tpl = '/themes/default';</script>
+</head>
+<body>
+<!-- ********************************** 01 WXS 20171013 Edit ***************************************  -->
+<div id="demo-2" style="margin-top: 0;color:#666; width: 100%; box-sizing:border-box; padding:0 3%;height: 2.5rem; z-index: 200; background:rgba(0,0,0,.78);position: fixed;text-align: center; border-bottom: 1px solid #393939;">
+    <marquee scrollamount=3; style=" line-height: 2.5rem; font-size: 1.2rem;color:#666;  ">
+        您正在使用由<span style="color: #ffbc00;">宋芳渔具店</span>推荐的<span style="color: #ffbc00;">宋芳专用50元抵用券</span>！
+    </marquee>
+</div>
+<!-- *********************************** 01 WXS 20171013 Edit End **************************************  -->
+<!-- ********************************** 02 WXS 20171013 Edit ***************************************  -->
+<div class="con m-b7 new-maxbox" style="margin-top: 2.5rem;" >
+<!-- *********************************** 02 WXS 20171013 Edit End **************************************  -->
+    <div class="con">
+        <div class="ect-bg">
+            <header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write"> <a href="javascript:history.go(-1)" class="pull-left ect-icon ect-icon1 ect-icon-history"></a> <span>订单确认</span> <a href="javascript:;" onClick="openMune()" class="pull-right ect-icon ect-icon1 ect-icon-mune"></a></header>
+            <nav class="ect-nav ect-nav-list" style="display:none;"> <ul class="ect-diaplay-box text-center">
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=index&a=index&u=441" style="font-size:1.4rem"><i class="ect-icon ect-icon-home"></i>首页</a></li>
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=category&a=top_all&u=441" style="font-size:1.4rem"><i class="ect-icon ect-icon-cate"></i>分类</a></li>
+                <li class="ect-box-flex"><a href="javascript:;" style="font-size:1.4rem" class="j-search-input"><i class="ect-icon ect-icon-search"></i>搜索</a></li>
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=flow&a=cart&u=441" style="font-size:1.4rem"><i class="ect-icon ect-icon-flow"></i>购物车</a></li>
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=user&a=index&u=441" style="font-size:1.4rem"><i class="ect-icon ect-icon-user"></i>用户中心</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div class="flow-checkout">
+            <form action="/index.php?m=default&c=flow&a=done&u=441" method="post" name="theForm" id="theForm" onSubmit="return checkOrderForm(this)">
+                <script type="text/javascript">
+                    var flow_no_payment = "您必须选定一个支付方式。";
+//                    var flow_no_shipping = "您必须选定一个配送方式。";
+                </script>
+
+                <a href="/index.php?m=default&c=flow&a=consignee_list&u=441">
+
+                <section class="ect-margin-tb ect-padding-lr ect-padding-tb checkout-add">
+                    <label for="addressId">
+                        <p class="title">毛叠叠 <span>15957493990</span></p>
+                        <p>彩虹广场</p>
+                        <i class="fa fa-angle-right"></i>
+                    </label>
+                </section>
+            </a>
+                <section class="ect-margin-tb ect-margin-bottom0 ect-padding-lr checkout-select checkout-pro-list">
+                    <p><b>商品列表</b><span class="label ect-bg-colory"><a href="/index.php?m=default&c=flow&a=index&u=441" class="ect-colorf">修改</a></span></p>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt class="pull-left">
+                                    <a href="/index.php?m=default&c=goods&a=index&id=108&u=441" target="_blank" >迪佳 翔光湖8.0/9.0/10/11/12米 鲇竿</a>
+                                    (<span style="color:#FF0000">免运费商品</span>)              </dt>
+                                <dd class="pull-left list-num">x 1</dd>
+                                <dd class="pull-right">￥1200.00</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt class="pull-left">
+                                    <a href="/index.php?m=default&c=goods&a=index&id=25&u=441" target="_blank" >迪佳TA系列前打轮</a>
+                                </dt>
+                                <dd class="pull-left list-num">x 1</dd>
+                                <dd class="pull-right">￥195.00</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt class="pull-left">
+                                    <a href="/index.php?m=default&c=goods&a=index&id=47&u=441" target="_blank" >迪佳 黑纹鲤 黑纹鲤黑坑版 鲤竿台钓竿钓竿钓鱼竿垂钓碳素渔具</a>
+                                </dt>
+                                <dd class="pull-left list-num">x 1</dd>
+                                <dd class="pull-right">￥1195.00</dd>
+                            </dl>
+                        </li>
+
+                    </ul>
+                </section>
+                <section class="ect-margin-tb ect-padding-lr checkout-select" id="accordion">
+
+                    <!-- ********************************** 03 WXS 20171013 Edit ***************************************  -->
+                    <a>
+                        <p><b>支付方式</b></p>
+                    </a>
+                    <div id="collapseTwo" class="panel-collapse collapse in"  style="display: block;">
+                        <ul class="ect-radio">
+                            <li>
+                                <input name="payment" type="radio" id="payment_4" value="4" checked isCod="1" onclick="selectPayment(this)"  style="vertical-align:middle">
+                                <label for="payment_4">微信支付<i></i></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ********************************** 03 WXS 20171013 Edit End***************************************  -->
+
+
+                    <!-- ********************************** 04 WXS 20171013 Edit ***************************************  -->
+                    <a>
+                        <p><b>是否使用[迪佳8折抵扣卷]</b></p>
+                    </a>
+                    <div id="collapseThree1" class="panel-collapse collapse in"  style="display: block;">
+                        <ul class="ect-radio">
+                            <li>
+                                <input name="coupon" type="radio" id="coupon_1" value="1" isCod="1" checked="checked" onclick="selectCou(this)"  style="vertical-align:middle">
+                                <label for="coupon_1">使用 <i></i></label>
+                            </li>
+                            <li>
+                                <input name="coupon" type="radio" id="coupon_2" value="0" isCod="1" onclick="selectCou(this)"  style="vertical-align:middle">
+                                <label for="coupon_2">不使用<i></i></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ********************************** 03 WXS 20171013 Edit End***************************************  -->
+
+
+
+
+
+
+                </section>
+
+                <section class="ect-margin-tb ect-padding-lr checkout-select">
+
+
+
+
+                    <a>
+                        <p><b>留言(选填)</b></p>
+                    </a>
+                    <div id="collapseFive" class="panel-collapse collapse in" style="display:block;  ">
+                        <input name="postscript" type="text" class="fuyan" placeholder="您有什么叮嘱请留言">
+                    </div>
+                </section>
+
+                <section class="ect-margin-tb ect-margin-bottom0 ect-padding-lr checkout-select checkout-pro-list">
+
+                    <div class="ect-padding-tb text-right" id="ECS_ORDERTOTAL">
+                        <table width="100%"  style="line-height: 3rem;">
+                            <tr>
+                                <td align="left">商品总价</td>
+                                <td align="right"><b >￥2590.00</b></td>
+                            </tr>
+                            <tr>
+                                <td align="left">运费</td>
+                                <td align="right"><b >￥0.00</b></td>
+                            </tr>
+                            <tr>
+                                <td align="left">已优惠</td>
+                                <td align="right"><b >-￥518.00</b></td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+
+                </section>
+
+
+                <div class="ect-padding-lr ect-padding-tb ect-margin-tb" style="width:100%;background: #fff; position: fixed; bottom:40px; padding: 0; border-top: 1px solid #e3e3e3; ">
+                    <input type="submit" name="submit" value="提交订单" class="btn btn-info ect-btn-info ect-colorf ect-bg"  style="border-radius:0; width: 32%; float: right; padding:0.7em 0;"/>
+                    <input type="hidden" name="step" value="done" />
+                    <em class="fr" style=" margin-right: 1em; text-align: right; margin-top: 0.4em;">
+                        合计：<b class="ect-colory" style="font-size: 1.6rem;">￥2072.00</b>
+                        <p style="color: #aaa; font-size: 1.1rem;">共3件商品，已包含全部费用</p>
+                    </em>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer-nav dis-box">
+        <a href="/index.php?m=default&c=index&a=index&u=0" class="box-flex nav-list active">
+            <i class="nav-box i-home"></i><span>首页</span>
+        </a>
+        <a href="/index.php?m=default&c=category&a=top_all&u=0" class="box-flex nav-list">
+            <i class="nav-box i-cate"></i><span>分类</span>
+        </a>
+
+        <a href="/index.php?m=default&c=flow&a=cart&u=0" class="box-flex position-rel nav-list">
+            <i class="nav-box i-flow"></i><span>购物车</span>
+        </a>
+        <a href="/index.php?m=default&c=user&a=index&u=0" class="box-flex nav-list">
+            <i class="nav-box i-user"></i><span>我的</span>
+        </a>
+    </footer>
+
+
+    <div class="search-div ts-3">
+        <section class="search">
+            <form action="/index.php?m=default&c=category&a=index&u=441" method="post">
+                <div class="text-all dis-box j-text-all">
+                    <a class="a-icon-back j-close-search" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou is-left-font"></i></a>
+                    <div class="box-flex input-text">
+                        <input class="j-input-text" type="text" name="name" placeholder="请输入搜索关键词！" id="newinput" autofocus="autofocus"/ >
+                        <i class="iconfont icon-guanbi2 is-null j-is-null"></i>
+                    </div>
+                    <button type="submit" class="btn-submit">搜索</button>
+                </div>
+            </form>
+        </section>
+        <section class="search-con">
+            <div class="swiper-scroll history-search">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>
+                            <label class="fl">热门搜索</label>
+                        </p>
+                        <ul class="hot-search a-text-more">
+                        </ul>
+                        <p class="hos-search">
+                            <label class="fl">最近搜索</label>
+                            <span class="fr" onclick="javascript:clearHistroy();"><i class="iconfont icon-xiao10 is-xiao10 jian-top fr"></i></span>
+                        </p>
+
+                        <ul class="hot-search a-text-more a-text-one" id="search_histroy">
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+        <footer class="close-search j-close-search">
+            点击关闭
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        //设置cookie
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+        function clearHistroy(){
+            setCookie('ECS[keywords]', '', -1);
+            document.getElementById("search_histroy").style.visibility = "hidden";
+        }
+    </script><script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.min.js" ></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.json.js" ></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/common.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.more.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/utils.js" ></script>
+    <script src="http://www.ticaglobal.cn/data/assets/swiper/js/jquery.swiper.min.js"></script>
+    <script src="http://www.ticaglobal.cn/themes/default/js/ectouch.js"></script>
+    <script src="http://www.ticaglobal.cn/themes/default/js/simple-inheritance.min.js"></script>
+    <script src="http://www.ticaglobal.cn/themes/default/js/code-photoswipe-1.0.11.min.js"></script>
+    <script src="http://www.ticaglobal.cn/data/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://www.ticaglobal.cn/themes/default/js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/validform.js" ></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/ectouch.js"></script>
+    <script language="javascript">
+        var handler = function(e) { //禁止浏览器默认行为
+            e.preventDefault();
+        };
+        /*banner滚动图片*/
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            loop: true,
+            autoplay : 2000
+        });
+        /*弹出评论层并隐藏其他层*/
+        function openSearch(){
+            document.addEventListener("touchmove", handler, false);
+            $("body").addClass("show-search-div");
+            $(".search-div").css("z-index","4999");
+            $("input[name='keywords']").focus();
+        }
+    </script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/shopping_flow.js"></script>
+    <script>
+        var selectedCou = null;
+        /**
+         * 改变分享红包
+         */
+        function selectCou(obj)
+        {
+            if (selectedCou == obj)
+            {
+                return;
+            }
+            else
+            {
+                selectedCou = obj;
+            }
+
+            $.get('index.php?m=default&c=flow&a=select_cou', {cou:obj.value}, function(data){
+                orderSelectedResponse(data);
+            }, 'json');
+        }
+    </script>
+    <script>
+        var selectedRoll = null;
+        /**
+         * 是否注册礼品卷
+         */
+        function selectRoll(obj)
+        {
+            if (selectedRoll == obj)
+            {
+                return;
+            }
+            else
+            {
+                selectedRoll = obj;
+            }
+
+            $.get('index.php?m=default&c=flow&a=select_roll', {roll:obj.value});
+        }
+    </script>
+
+    <script>
+        function back_goods_number(id){
+            var goods_number = document.getElementById('goods_number'+id).value;
+            document.getElementById('back_number'+id).value = goods_number;
+        }
+        function change_goods_number(type, id)
+        {
+            var goods_number = document.getElementById('goods_number'+id).value;
+            if(type != 2){back_goods_number(id)}
+            if(type == 1){goods_number--;}
+            if(type == 3){goods_number++;}
+            if(goods_number <=0 ){goods_number=1;}
+            if(!/^[0-9]*$/.test(goods_number)){goods_number = document.getElementById('back_number'+id).value;}
+            document.getElementById('goods_number'+id).value = goods_number;
+            $.post('/index.php?m=default&c=flow&a=ajax_update_cart&u=441', {
+                rec_id : id,goods_number : goods_number
+            }, function(data) {
+                change_goods_number_response(data,id);
+            }, 'json');
+        }
+        // 处理返回信息并显示
+        function change_goods_number_response(result,id)
+        {
+            if (result.error == 0){
+                var rec_id = result.rec_id;
+                $("#goods_number_"+rec_id).val(result.goods_number);
+                document.getElementById('total_number').innerHTML = result.total_number;//更新数量
+                document.getElementById('goods_subtotal').innerHTML = result.total_desc;//更新小计
+                if (document.getElementById('ECS_CARTINFO')){
+                    //更新购物车数量
+                    document.getElementById('ECS_CARTINFO').innerHTML = result.cart_info;
+                }
+            }else if (result.message != ''){
+                alert(result.message);
+                var goods_number = document.getElementById('back_number'+id).value;
+                document.getElementById('goods_number'+id).value = goods_number;
+            }
+        }
+
+        /*点击下拉手风琴效果*/
+        $('.collapse').collapse()
+        $(".checkout-select a").click(function(){
+            if(!$(this).hasClass("select")){
+                $(this).addClass("select");
+            }else{
+                $(this).removeClass("select");
+            }
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+/*
+ * SmarTicker
+ * http://powerup.ir/projects/smarticker
+ * Copyright (c) 2013 Meghdad Hadidi
+ */
+.smarticker{
+	width: 100%;
+	background: #fff;
+	margin: 0 auto;
+	direction: ltr;
+}
+
+.smarticker ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ .smarticker .smarticker-news{
+	height: 100%;
+	overflow: hidden;
+}
+
+.smarticker li{
+	height: 30px;
+	line-height: 28px;
+}
+
+.smarticker a{
+	text-decoration: none;
+}
+
+.smarticker .smarticker-news{
+	text-align: left;
+	position: relative;
+}
+
+.smarticker .smarticker-news ul{
+	margin-left: 15px;
+	display: none;
+}
+
+.smarticker .smarticker-news ul li{
+	position: absolute;
+	display: none;
+	height: 100%;
+	top: 0;
+}
+

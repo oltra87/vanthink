@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <TITLE>zTree</TITLE>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="metroStyle/metroStyle.css" type="text/css">
+
+</HEAD>
+<BODY>
+<ul id="treeDemo" class="ztree"></ul>
+
+
+<script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="metroStyle/js/jquery.ztree.core.js"></script>
+<script type="text/javascript" src="metroStyle/js/jquery.ztree.excheck.js"></script>
+<SCRIPT type="text/javascript">
+    <!--
+    var setting = {
+        check: {
+            enable: true
+        },
+        view:{
+            showIcon: false
+        }
+
+    };
+    var zNodes =[
+        { id:1, name:"一级分类-1",
+            children: [
+                { id:11, name:"二级分类-1",
+                    children: [
+                        { id:111, name:"三级分类-1" },
+                        { id:112, name:"三级分类-2" },
+                        { id:113, name:"三级分类-3",
+                            children: [
+                                { id:1131, name:"单品",url:"https://www.baidu.com" },
+                                { id:1132, name:"单品" },
+                                { id:1134, name:"单品" }
+                            ]
+                        }
+                    ]},
+                { id:12, name:"二级分类-2",
+                    children: [
+                        { id:121, name:"三级分类-1" },
+                        { id:122, name:"三级分类-2" },
+                        { id:123, name:"三级分类-3" }
+                    ]},
+                { id:13, name:"二级分类-3"}
+            ]},
+        {  id:2, name:"一级分类-2",
+            children: [
+                { id:22, name:"二级分类-2",
+                    children: [
+                        { id:221, name:"三级分类-1" },
+                        { id:222, name:"三级分类-2" },
+                        { id:223, name:"三级分类-3" }
+                    ]},
+                { id:23, name:"二级分类-2",
+                    children: [
+                        { id:231, name:"三级分类-1" },
+                        { id:232, name:"三级分类-2" },
+                        { id:233, name:"三级分类-3" }
+                    ]}
+            ]},
+        {  id:3, name:"一级分类-3" }
+
+    ];
+
+    $(document).ready(function(){
+        $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+    });
+    //-->
+</SCRIPT>
+
+
+
+</BODY>
+</HTML>
